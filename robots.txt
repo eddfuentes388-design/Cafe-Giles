@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /checkout
+Disallow: /cuenta
+
+Sitemap: https://www.aromaandino.com/sitemap.xml
