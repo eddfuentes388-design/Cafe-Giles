@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body transition-colors duration-300;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-cream-100 dark:bg-forest-700;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-coffee-400 rounded-full;
+}
+
+.container-app {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 bg-forest-600 hover:bg-forest-700 text-cream-50 font-semibold px-6 py-3 rounded-full shadow-premium transition-all duration-300 hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 bg-cream-50 border-2 border-coffee-500 text-coffee-700 hover:bg-coffee-500 hover:text-cream-50 font-semibold px-6 py-3 rounded-full transition-all duration-300;
+}
+
+.skeleton {
+  @apply animate-pulse bg-coffee-100 dark:bg-forest-700 rounded-lg;
+}
+
+.input-field {
+  @apply w-full px-4 py-2.5 rounded-lg border border-coffee-200 dark:border-forest-600 bg-cream-50 dark:bg-forest-800 text-coffee-900 dark:text-cream-100 focus:outline-none focus:ring-2 focus:ring-forest-500 transition-shadow;
+}
